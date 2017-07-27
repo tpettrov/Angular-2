@@ -1,0 +1,5 @@
+<div style="text-align: center">
+  <h1>Details:</h1>
+  <div *ngIf="description">{{description | truncate : 5}}</div>
+  <app-list (onShowArticle)="showDetails($event)"></app-list>
+</div>
