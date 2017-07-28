@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import {HomeData} from "./HomeData";
+import {Data} from "./Data";
 
 @Component({
   selector: 'app-root',
@@ -10,13 +10,13 @@ export class HomeComponent implements OnInit{
   title = 'profile data';
   profile: object;
 
-  constructor(private data: HomeData) {}
+  constructor(private data: Data) {}
 
   ngOnInit () {
      this.data.getDataProfile().then((dataReceived) => {
 
       this.profile = dataReceived;
-       console.log(this.profile)
+
     })
 
   }

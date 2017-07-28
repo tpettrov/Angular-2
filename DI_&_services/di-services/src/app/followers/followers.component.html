@@ -1,0 +1,16 @@
+<div style="text-align: center;">
+  <h1>
+    Followers:
+  </h1>
+
+  <div  *ngFor="let follower of followers">
+    <img src="{{follower.avatar_url}}"/>
+    <span><p>{{follower.login}}</p><a href="{{follower.url}}">See github</a></span>
+    <hr>
+  </div>
+
+</div>
+
+<button *ngIf="!followers" (click)="fetchFollowers()">Show Followers</button>
+
+
