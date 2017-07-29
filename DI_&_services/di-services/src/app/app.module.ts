@@ -7,13 +7,15 @@ import { HomeComponent } from './home.component';
 import {FollowersComponent} from './followers/followers.component';
 import {ReposContainerComponent} from './repos/reposContainer.component';
 import {SingleRepoComponent} from './repos/repo.component';
+import {ContributorsContainerComponent} from './contributors/contributors.component';
 
 @NgModule({
   declarations: [
     HomeComponent,
     FollowersComponent,
     ReposContainerComponent,
-    SingleRepoComponent
+    SingleRepoComponent,
+    ContributorsContainerComponent
   ],
   imports: [
     BrowserModule,

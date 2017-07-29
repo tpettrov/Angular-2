@@ -15,37 +15,12 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="app.module.ts" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/di-services/src/app/app.module.ts">
+      <file leaf-file-name="repo.component.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/di-services/src/app/repos/repo.component.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="8" column="27" lean-forward="false" selection-start-line="8" selection-start-column="27" selection-end-line="8" selection-end-column="27" />
+            <state relative-caret-position="34">
+              <caret line="2" column="98" lean-forward="true" selection-start-line="2" selection-start-column="98" selection-end-line="2" selection-end-column="98" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="reposContainer.component.ts" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/di-services/src/app/repos/reposContainer.component.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="328">
-              <caret line="30" column="0" lean-forward="true" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
-              <folding>
-                <element signature="n#!!doc" expanded="true" />
-                <element signature="e#41#83#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="reposContainer.component.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/di-services/src/app/repos/reposContainer.component.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="6" column="111" lean-forward="false" selection-start-line="6" selection-start-column="111" selection-end-line="6" selection-end-column="111" />
-              <folding>
-                <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -53,8 +28,8 @@
       <file leaf-file-name="repo.component.ts" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/di-services/src/app/repos/repo.component.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="11" column="0" lean-forward="true" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+            <state relative-caret-position="238">
+              <caret line="16" column="0" lean-forward="true" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
               <folding>
                 <element signature="e#41#110#0" expanded="true" />
               </folding>
@@ -62,46 +37,24 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="repo.component.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/di-services/src/app/repos/repo.component.html">
+      <file leaf-file-name="contributors.component.ts" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/di-services/src/app/contributors/contributors.component.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="1" column="41" lean-forward="true" selection-start-line="1" selection-start-column="41" selection-end-line="1" selection-end-column="68" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Data.ts" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/di-services/src/app/Data.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="33" column="42" lean-forward="true" selection-start-line="33" selection-start-column="42" selection-end-line="33" selection-end-column="42" />
+            <state relative-caret-position="187">
+              <caret line="13" column="37" lean-forward="true" selection-start-line="13" selection-start-column="37" selection-end-line="13" selection-end-column="37" />
               <folding>
-                <element signature="e#41#84#0" expanded="true" />
+                <element signature="e#41#88#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/di-services/src/index.html">
+      <file leaf-file-name="contributors.component.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/di-services/src/app/contributors/contributors.component.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="14" column="37" lean-forward="false" selection-start-line="14" selection-start-column="37" selection-end-line="14" selection-end-column="37" />
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="home.component.ts" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/di-services/src/app/home.component.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="18" column="0" lean-forward="false" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
-              <folding>
-                <element signature="e#0#50#0" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -112,8 +65,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="CSS File" />
-        <option value="TypeScript File" />
         <option value="HTML File" />
+        <option value="TypeScript File" />
       </list>
     </option>
   </component>
@@ -132,16 +85,18 @@
         <option value="$PROJECT_DIR$/di-services/src/app/repos/repos.model.ts" />
         <option value="$PROJECT_DIR$/di-services/src/app/followers/followers.component.html" />
         <option value="$PROJECT_DIR$/di-services/src/app/contributors/contributors.component.htm.html" />
-        <option value="$PROJECT_DIR$/di-services/src/app/contributors/contributors.component.ts" />
         <option value="$PROJECT_DIR$/di-services/src/app/repos/repos.component.html" />
-        <option value="$PROJECT_DIR$/di-services/src/app/Data.ts" />
         <option value="$PROJECT_DIR$/di-services/src/app/repos/repos.component.ts" />
+        <option value="$PROJECT_DIR$/di-services/src/app/repos/contributor.model.ts" />
+        <option value="$PROJECT_DIR$/di-services/src/app/Data.ts" />
         <option value="$PROJECT_DIR$/di-services/src/index.html" />
         <option value="$PROJECT_DIR$/di-services/src/app/app.module.ts" />
-        <option value="$PROJECT_DIR$/di-services/src/app/repos/repo.component.html" />
-        <option value="$PROJECT_DIR$/di-services/src/app/repos/repo.component.ts" />
-        <option value="$PROJECT_DIR$/di-services/src/app/repos/reposContainer.component.html" />
         <option value="$PROJECT_DIR$/di-services/src/app/repos/reposContainer.component.ts" />
+        <option value="$PROJECT_DIR$/di-services/src/app/repos/reposContainer.component.html" />
+        <option value="$PROJECT_DIR$/di-services/src/app/repos/repo.component.ts" />
+        <option value="$PROJECT_DIR$/di-services/src/app/repos/repo.component.html" />
+        <option value="$PROJECT_DIR$/di-services/src/app/contributors/contributors.component.ts" />
+        <option value="$PROJECT_DIR$/di-services/src/app/contributors/contributors.component.html" />
       </list>
     </option>
   </component>
@@ -304,6 +259,9 @@
     <property name="list.type.of.created.stylesheet" value="CSS" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\JS Web\Angular\DI_&amp;_services\di-services\src\app\contributors" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\JS Web\Angular\DI_&amp;_services\di-services\src\app\repos" />
     </key>
@@ -392,12 +350,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1501188899829</updated>
-      <workItem from="1501188902356" duration="35469000" />
+      <workItem from="1501188902356" duration="38825000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="35469000" />
+    <option name="totallyTimeSpent" value="38825000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -570,11 +528,29 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/di-services/src/app/contributors/contributors.component.html">
+    <entry file="file://$PROJECT_DIR$/di-services/src/app/repos/reposContainer.component.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="22" lean-forward="true" selection-start-line="3" selection-start-column="22" selection-end-line="3" selection-end-column="22" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/di-services/src/app/repos/repos.model.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/di-services/src/app/contributors/contributor.model.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="3" column="28" lean-forward="false" selection-start-line="3" selection-start-column="17" selection-end-line="3" selection-end-column="28" />
+          <folding>
+            <element signature="n#!!doc;n#Contributor#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -588,91 +564,85 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/di-services/src/app/repos/reposContainer.component.css">
+    <entry file="file://$PROJECT_DIR$/di-services/src/app/app.module.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/di-services/src/app/contributors/contributors.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="12" column="0" lean-forward="true" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="408">
+          <caret line="24" column="72" lean-forward="false" selection-start-line="24" selection-start-column="72" selection-end-line="24" selection-end-column="72" />
+          <folding>
+            <element signature="e#0#58#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/di-services/src/app/Data.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="33" column="42" lean-forward="true" selection-start-line="33" selection-start-column="42" selection-end-line="33" selection-end-column="42" />
+        <state relative-caret-position="102">
+          <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="61" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/di-services/src/app/repos/reposContainer.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="0" lean-forward="true" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
           <folding>
-            <element signature="e#41#84#0" expanded="true" />
+            <element signature="n#!!doc" expanded="true" />
+            <element signature="e#41#83#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/di-services/src/app/repos/repos.model.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="10" lean-forward="false" selection-start-line="7" selection-start-column="10" selection-end-line="7" selection-end-column="10" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/di-services/src/app/app.module.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="27" lean-forward="false" selection-start-line="8" selection-start-column="27" selection-end-line="8" selection-end-column="27" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/di-services/src/app/repos/repo.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="41" lean-forward="true" selection-start-line="1" selection-start-column="41" selection-end-line="1" selection-end-column="68" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/di-services/src/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="37" lean-forward="false" selection-start-line="14" selection-start-column="37" selection-end-line="14" selection-end-column="37" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/di-services/src/app/repos/reposContainer.component.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
-          <caret line="6" column="111" lean-forward="false" selection-start-line="6" selection-start-column="111" selection-end-line="6" selection-end-column="111" />
+          <caret line="6" column="55" lean-forward="false" selection-start-line="6" selection-start-column="55" selection-end-line="6" selection-end-column="55" />
           <folding>
             <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/di-services/src/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="37" lean-forward="true" selection-start-line="14" selection-start-column="37" selection-end-line="14" selection-end-column="66" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/di-services/src/app/contributors/contributors.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/di-services/src/app/repos/repo.component.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="11" column="0" lean-forward="true" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+        <state relative-caret-position="238">
+          <caret line="16" column="0" lean-forward="true" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
           <folding>
             <element signature="e#41#110#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/di-services/src/app/repos/reposContainer.component.ts">
+    <entry file="file://$PROJECT_DIR$/di-services/src/app/repos/repo.component.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="328">
-          <caret line="30" column="0" lean-forward="true" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
+        <state relative-caret-position="34">
+          <caret line="2" column="98" lean-forward="true" selection-start-line="2" selection-start-column="98" selection-end-line="2" selection-end-column="98" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/di-services/src/app/contributors/contributors.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="13" column="37" lean-forward="true" selection-start-line="13" selection-start-column="37" selection-end-line="13" selection-end-column="37" />
           <folding>
-            <element signature="n#!!doc" expanded="true" />
-            <element signature="e#41#83#0" expanded="true" />
+            <element signature="e#41#88#0" expanded="true" />
           </folding>
         </state>
       </provider>

@@ -6,6 +6,7 @@ import { Http } from '@angular/http';
 import 'rxjs/add/operator/toPromise';
 import { Follower } from './followers/followers.model';
 import { Repo } from './repos/repos.model';
+import {Contributor} from './contributors/contributor.model';
 const urlProfile: string = 'https://api.github.com/users/gavofyork';
 const urlFollowers: string = 'https://api.github.com/users/gavofyork/followers';
 const urlRepos: string = 'https://api.github.com/users/gavofyork/repos';
@@ -34,11 +35,11 @@ export class Data {
       .then(resp => resp.json() as Repo[])
       .catch(err => { console.log(err); return []});
   }
-  getDataRepoContributors(repoName, repoOwner) : Promise<Array<Repo>> {
+  getDataRepoContributors(repoName, repoOwner) : Promise<Array<Contributor>> {
     return this.http
       .get(`https://api.github.com/repos/${repoOwner}/${repoName}/contributors`)
       .toPromise()
-      .then(resp => resp.json() as Repo[])
+      .then(resp => resp.json() as Contributor[])
       .catch(err => { console.log(err); return []});
   }
 

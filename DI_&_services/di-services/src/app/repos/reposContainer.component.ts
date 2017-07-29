@@ -5,6 +5,7 @@ import { Component } from '@angular/core';
 import {Data} from "../Data";
 import { Repo } from './repos.model';
 
+
 @Component({
   selector: 'app-repos-container',
   templateUrl: './reposContainer.component.html',
@@ -15,6 +16,7 @@ import { Repo } from './repos.model';
 export class ReposContainerComponent {
 
   repos: Repo[];
+
 
   constructor(private data: Data) {}
 
@@ -27,14 +29,6 @@ export class ReposContainerComponent {
 
   }
 
-  fetchContributorsData($event){
 
-    this.data.getDataRepoContributors($event.repo_name, $event.repo_owner).then((dataReceived) => {
-
-      console.log(dataReceived)
-    })
-
-
-  }
 
 }
