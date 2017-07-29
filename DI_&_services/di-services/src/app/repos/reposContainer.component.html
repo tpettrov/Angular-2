@@ -1,0 +1,16 @@
+<div style="text-align: center;">
+  <h1 *ngIf="repos">
+
+  Repos:
+  </h1>
+
+  <single-repo *ngFor="let repo of repos" [repo]="repo" (onFetchContributorsData)="fetchContributorsData($event)">>
+
+  </single-repo>
+
+
+</div>
+
+<button *ngIf="!repos" (click)="fetchRepos()">Show Repos</button>
+
+
