@@ -1,8 +1,8 @@
-import {Injectable} from '@Angular/core';
+import {Injectable} from '@angular/core';
 import {Car} from '../cars/car.model';
 
 @Injectable()
-export class Data {
+export class DataCars {
 
     getCars() : Promise <Array<Car>> {
 

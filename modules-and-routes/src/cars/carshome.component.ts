@@ -3,19 +3,18 @@
  */
 import { Component, OnInit } from '@angular/core';
 import {Car} from './car.model';
-import {Data} from '../app/data';
+import {DataCars} from '../app/data_cars';
 
 
 @Component({
-  selector: 'cars-home',
-  providers: [Data],
+  providers: [DataCars],
   templateUrl: 'carshome.component.html'
 })
 export class CarsHomeComponent implements OnInit{
 
   cars : Car[];
 
-  constructor(private data: Data) {}
+  constructor(private data: DataCars) {}
 
   ngOnInit () {
 
