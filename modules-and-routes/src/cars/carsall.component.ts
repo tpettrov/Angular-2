@@ -16,13 +16,13 @@ export class CarsAllComponent implements OnInit {
   cars: Car[];
   page = 1;
   pageSize = 3;
-  currentPos = this.page * this.pageSize;
-
+  currentEndPos = this.page * this.pageSize;
+  currentStartPos = this.currentEndPos - this.pageSize;
   constructor(private data: DataCars) {}
 
   ngOnInit () {
 
-    this.data.getAllCars(this.page, this.currentPos).then((dataReceived) => {
+    this.data.getAllCars(this.currentStartPos, this.currentEndPos).then((dataReceived) => {
 
       this.cars = dataReceived;
 
@@ -40,9 +40,23 @@ export class CarsAllComponent implements OnInit {
   }
   PreviousPage() {
     this.page--;
+    this.currentEndPos = this.page * this.pageSize;
+    this.currentStartPos = this.currentEndPos - this.pageSize;
+    this.data.getAllCars(this.currentStartPos, this.currentEndPos).then((dataReceived) => {
+
+      this.cars = dataReceived;
+
+    });
   }
   NextPage() {
     this.page++;
+    this.currentEndPos = this.page * this.pageSize;
+    this.currentStartPos = this.currentEndPos - this.pageSize;
+    this.data.getAllCars(this.currentStartPos, this.currentEndPos).then((dataReceived) => {
+
+      this.cars = dataReceived;
+
+    });
   }
 
 }

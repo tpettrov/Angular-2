@@ -14,11 +14,11 @@ export class DataCars {
 
   }
 
-  getAllCars(page, pos): Promise <Array<Car>> {
+  getAllCars(start, end): Promise <Array<Car>> {
 
     return new Promise((resolve, reject) => {
 
-      resolve(cars.slice(pos, pos + 3));
+      resolve(cars.slice(start, end));
 
     });
 
