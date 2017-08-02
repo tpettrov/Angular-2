@@ -3,9 +3,8 @@
  */
 export interface Car {
 
-  make: string,
   model: string,
-  date: Date,
-  image: string
+  make: string,
+  image: string,
 
 }

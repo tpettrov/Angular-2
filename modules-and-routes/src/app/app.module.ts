@@ -1,21 +1,21 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import {AppRoutesModule} from '../routes.module'
-import {CarsHome} from '../cars/carsHome.component'
+import {CarsHomeComponent} from '../cars/carshome.component'
 import { AppComponent } from './app.component';
-import {Data} from './Data'
+
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    CarsHome
+    CarsHomeComponent
   ],
   imports: [
     BrowserModule,
     AppRoutesModule
   ],
-  providers: [Data],
+  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

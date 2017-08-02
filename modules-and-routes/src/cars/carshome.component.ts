@@ -3,15 +3,15 @@
  */
 import { Component, OnInit } from '@angular/core';
 import {Car} from './car.model';
-import {Data} from '../app/Data';
+import {Data} from '../app/data';
 
 
 @Component({
   selector: 'cars-home',
   providers: [Data],
-  templateUrl: './carsHome.component.html'
+  templateUrl: 'carshome.component.html'
 })
-export class CarsHome implements OnInit{
+export class CarsHomeComponent implements OnInit{
 
   cars : Car[];
 

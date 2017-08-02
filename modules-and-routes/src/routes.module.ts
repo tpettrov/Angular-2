@@ -3,11 +3,11 @@
  */
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import {CarsHome} from './cars/carsHome.component'
+import {CarsHomeComponent} from './cars/carshome.component'
 
 
 const routes: Routes = [
-  { path: '', component: CarsHome }
+  { path: '', component: CarsHomeComponent }
 ];
 
 @NgModule({
