@@ -8,12 +8,13 @@ import {AppRoutesModule} from '../routes/routes.module';
 import {CarsHomeComponent} from '../cars/carshome.component';
 import {DataCars} from '../app/data_cars';
 import {CarsAllComponent} from '../cars/carsall.component';
-
+import {CarDetailComponent} from '../cars/cardetail.component';
 
 @NgModule({
   declarations: [
     CarsHomeComponent,
-    CarsAllComponent
+    CarsAllComponent,
+    CarDetailComponent
   ],
   imports: [
     CommonModule,

@@ -5,11 +5,12 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import {CarsHomeComponent} from '../cars/carshome.component';
 import {CarsAllComponent} from '../cars/carsall.component';
-
+import {CarDetailComponent} from '../cars/cardetail.component';
 
 const routes: Routes = [
   { path: '', component: CarsHomeComponent },
-  { path: 'cars/all', component: CarsAllComponent }
+  { path: 'cars/all', component: CarsAllComponent },
+  { path: 'cars/:id', component: CarDetailComponent }
 ];
 
 @NgModule({

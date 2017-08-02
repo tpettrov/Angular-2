@@ -24,6 +24,18 @@ export class DataCars {
 
   }
 
+  getCarById(id): Promise <Array<Car>> {
+
+    return new Promise((resolve, reject) => {
+      resolve(cars.filter((car) => {
+
+        return car.id.toString() === id;
+      }));
+
+    });
+
+  }
+
 }
 
 

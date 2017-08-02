@@ -4,7 +4,7 @@
   <div *ngFor="let car of cars">
     <p>Make: {{car.make}}</p>
     <p>Model:{{car.model}}</p>
-    <div><a routerLink="/car/details/{{car.id}}" routerLinkActive="active">Details</a></div>
+    <div><a routerLink="/cars/{{car.id}}" routerLinkActive="active">Details</a></div>
     <img src="{{car.image}}">
   </div>
   <button (click)="PreviousPage()">Previous Page</button>
