@@ -18,7 +18,7 @@ export class CarsHomeComponent implements OnInit{
 
   ngOnInit () {
 
-    this.data.getCars().then((dataReceived) => {
+    this.data.getFirstSixCars().then((dataReceived) => {
 
       this.cars = dataReceived;
 

@@ -4,11 +4,11 @@ import {Car} from '../cars/car.model';
 @Injectable()
 export class DataCars {
 
-    getCars() : Promise <Array<Car>> {
+  getFirstSixCars(): Promise <Array<Car>> {
 
     return new Promise((resolve, reject) => {
 
-      resolve(cars);
+      resolve(cars.slice(0,6));
 
     });
 
@@ -59,6 +59,14 @@ const cars = [
     model: 'Q50',
     date: new Date('2010-03-03'),
     image: 'http://blog.caranddriver.com/wp-content/uploads/2014/07/2016-Mazda-2-photo-leak.jpg'
-  }];
+  },
+  {
+    id: 8,
+    make: 'SAAB',
+    model: 'Exterminator',
+    date: new Date('2010-03-03'),
+    image: 'http://blog.caranddriver.com/wp-content/uploads/2014/07/2016-Mazda-2-photo-leak.jpg'
+  }
+];
 
 

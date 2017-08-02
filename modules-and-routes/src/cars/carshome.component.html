@@ -1,3 +1,8 @@
-<h1 *ngFor="let car of cars">
-  {{car.model}}
-</h1>
+<div style="text-align: center">
+<div *ngFor="let car of cars">
+  <p>{{car.make}}</p>
+  <p>Model:{{car.model}}</p>
+  <div><a routerLink="/car/details/{{car.id}}" routerLinkActive="active">Details</a></div>
+  <img src="{{car.image}}">
+</div>
+</div>
