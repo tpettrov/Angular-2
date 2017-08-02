@@ -3,7 +3,8 @@
  */
 import { Component, OnInit } from '@angular/core';
 import {Car} from './car.model';
-import Data from '../Data';
+import {Data} from '../app/Data';
+
 
 @Component({
   selector: 'cars-home',

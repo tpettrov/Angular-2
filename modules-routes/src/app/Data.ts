@@ -1,11 +1,9 @@
-/**
- * Created by apetrov on 8/2/2017.
- */
+
 import {Injectable} from '@Angular/core';
-import {Car} from './cars/car.model';
+import {Car} from '../cars/car.model';
 
 @Injectable()
-export default class Data {
+export class Data {
 
     getCars() : Promise <Array<Car>> {
 

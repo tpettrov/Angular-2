@@ -3,6 +3,7 @@ import { NgModule } from '@angular/core';
 import {AppRoutesModule} from '../routes.module'
 import {CarsHome} from '../cars/carsHome.component'
 import { AppComponent } from './app.component';
+import {Data} from './Data'
 
 
 @NgModule({
@@ -14,7 +15,7 @@ import { AppComponent } from './app.component';
     BrowserModule,
     AppRoutesModule
   ],
-  providers: [],
+  providers: [Data],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
