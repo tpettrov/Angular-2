@@ -8,11 +8,12 @@ import {DataCars} from '../app/data_cars';
 
 @Component({
   providers: [DataCars],
-  templateUrl: 'carshome.component.html'
+  templateUrl: 'carshome.component.html',
+  styleUrls: ['./carshome.component.css']
 })
-export class CarsHomeComponent implements OnInit{
+export class CarsHomeComponent implements OnInit {
 
-  cars : Car[];
+  cars: Car[];
 
   constructor(private data: DataCars) {}
 
@@ -22,7 +23,7 @@ export class CarsHomeComponent implements OnInit{
 
       this.cars = dataReceived;
 
-    })
+    });
 
   }
 

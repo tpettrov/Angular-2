@@ -8,13 +8,25 @@ export class DataCars {
 
     return new Promise((resolve, reject) => {
 
-      resolve(cars.slice(0,6));
+      resolve(cars.slice(0, 6));
+
+    });
+
+  }
+
+  getAllCars(page, pos): Promise <Array<Car>> {
+
+    return new Promise((resolve, reject) => {
+
+      resolve(cars.slice(pos, pos + 3));
 
     });
 
   }
 
 }
+
+
 
 
 const cars = [
