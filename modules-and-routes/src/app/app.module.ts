@@ -3,6 +3,7 @@ import { NgModule } from '@angular/core';
 import {AppRoutesModule} from '../routes/routes.module';
 import { AppComponent } from './app.component';
 import {CarsModule} from '../cars/cars.module';
+import { FormsModule } from '@angular/forms';
 
 
 
@@ -13,7 +14,8 @@ import {CarsModule} from '../cars/cars.module';
   imports: [
     BrowserModule,
     AppRoutesModule,
-    CarsModule
+    CarsModule,
+    FormsModule
 
   ],
   providers: [],

@@ -21,7 +21,6 @@ export class CarsAllComponent implements OnInit {
   constructor(private data: DataCars) {}
 
   ngOnInit () {
-
     this.data.getAllCars(this.currentStartPos, this.currentEndPos).then((dataReceived) => {
 
       this.cars = dataReceived;
