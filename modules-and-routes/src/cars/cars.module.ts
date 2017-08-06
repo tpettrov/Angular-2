@@ -9,6 +9,7 @@ import {DataCars} from '../app/data_cars';
 import {CarsAllComponent} from './carsall.component';
 import {CarDetailComponent} from '../cars/cardetail.component';
 import {CarFormComponent} from './carform.component';
+import {EditCarFormComponent} from './editcarform.component.html';
 import { FormsModule } from '@angular/forms';
 
 @NgModule({
@@ -17,6 +18,7 @@ import { FormsModule } from '@angular/forms';
     CarsAllComponent,
     CarDetailComponent,
     CarFormComponent,
+    EditCarFormComponent
   ],
   imports: [
     CommonModule,

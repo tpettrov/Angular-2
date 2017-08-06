@@ -3,7 +3,7 @@
  */
 import { Component } from '@angular/core';
 import {Car} from './car.model';
-
+import {DataCars} from '../app/data_cars';
 
 @Component({
   templateUrl: './carform.component.html',
@@ -11,13 +11,12 @@ import {Car} from './car.model';
 
 export class CarFormComponent {
 
-
+  constructor(private data: DataCars) {}
   makes = ['Mazda', 'Toyota', 'Honda'];
-
   currentCar = new Car('', '', '');
 
   onSubmit() {
-    console.log('Submitted!');
+    this.data.addCar(this.currentCar);
   }
 
 

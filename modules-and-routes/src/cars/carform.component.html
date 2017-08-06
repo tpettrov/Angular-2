@@ -1,6 +1,6 @@
-<div class="container">
+<div *ngIf="currentCar" class="container">
   <h1>Car Form</h1>
-  <form>
+  <form (ngSubmit)="onSubmit()">
     <div class="form-group">
       <label for="make">Make</label>
       <select
@@ -29,13 +29,13 @@
 
     <div class="form-group">
       <label for="image">Image</label>
-      <input type="text" class="form-control" id="image" required>
+      <input type="text" class="form-control" id="image" name="image" [(ngModel)]="currentCar.image" required>
     </div>
 
 
     <button type="submit" class="btn btn-success">Submit</button>
 
   </form>
-  
+
 
 </div>

@@ -35,11 +35,19 @@ export class DataCars {
     });
 
   }
+  addCar(car): void {
+      car.id = lastId + 1;
+      car.date =  new Date('2010-03-03');
+     cars.push(car);
+     console.log(car);
+     lastId++;
+
+  }
 
 }
 
 
-
+let lastId = 8;
 
 const cars = [
   {

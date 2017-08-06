@@ -5,6 +5,7 @@
     <p>Make: {{car.make}}</p>
     <p>Model:{{car.model}}</p>
     <div><a routerLink="/cars/{{car.id}}" routerLinkActive="active">Details</a></div>
+    <div><a routerLink="/cars/edit/{{car.id}}" routerLinkActive="active">Edit</a></div>
     <img src="{{car.image}}">
   </div>
   <button (click)="PreviousPage()">Previous Page</button>

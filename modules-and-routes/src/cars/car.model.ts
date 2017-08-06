@@ -6,6 +6,7 @@ export class Car {
     public make: string,
     public model: string,
     public image: string,
+    public id?: number
   ) { }
 
 }
