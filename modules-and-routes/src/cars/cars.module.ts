@@ -9,7 +9,7 @@ import {DataCars} from '../app/data_cars';
 import {CarsAllComponent} from './carsall.component';
 import {CarDetailComponent} from '../cars/cardetail.component';
 import {CarFormComponent} from './carform.component';
-
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -20,7 +20,8 @@ import {CarFormComponent} from './carform.component';
   ],
   imports: [
     CommonModule,
-    AppRoutesModule
+    AppRoutesModule,
+    FormsModule
   ],
   providers: [DataCars],
   exports:  []

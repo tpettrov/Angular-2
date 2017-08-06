@@ -1,21 +1,25 @@
 /**
  * Created by Toni on 8/6/2017.
  */
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
+import {Car} from './car.model';
 
 
 @Component({
   templateUrl: './carform.component.html',
 })
 
-export class CarFormComponent implements OnInit {
+export class CarFormComponent {
 
-test = 'test';
 
-  ngOnInit() {
+  makes = ['Mazda', 'Toyota', 'Honda'];
 
-    console.log('tuk');
-    }
+  currentCar = new Car('', '', '');
+
+  onSubmit() {
+    console.log('Submitted!');
+  }
+
 
 
 }
