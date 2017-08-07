@@ -6,6 +6,7 @@ import { Directive, ElementRef, HostListener, Input } from '@angular/core';
   selector: '[round]'
 })
 export class ImageDirective {
+
   @Input('round') radius: number;
 
    constructor (private el: ElementRef) {
