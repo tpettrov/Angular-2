@@ -11,7 +11,8 @@ import {CarDetailComponent} from '../cars/cardetail.component';
 import {CarFormComponent} from './carform.component';
 import {EditCarFormComponent} from './editcarform.component.html';
 import { FormsModule } from '@angular/forms';
-import {ImageDirective} from './imageDirective.directive'
+import {ImageDirective} from './imageDirective.directive';
+import  {DatePipe} from './pipeDate';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import {ImageDirective} from './imageDirective.directive'
     CarDetailComponent,
     CarFormComponent,
     EditCarFormComponent,
-    ImageDirective
+    ImageDirective,
+    DatePipe
   ],
   imports: [
     CommonModule,
