@@ -14,6 +14,7 @@ import {ActivatedRoute} from '@angular/router';
 
 export class CarDetailComponent implements OnInit {
 
+  radius: number;
     car: Car;
    id = this.route.snapshot.paramMap.get('id');
 
