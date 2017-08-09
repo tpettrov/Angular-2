@@ -3,7 +3,7 @@
  */
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import {CarsHomeComponent} from '../cars/carshome.component';
+import {CarsHomeComponent} from '../app/carshome.component';
 import {CarsAllComponent} from '../cars/carsall.component';
 import {CarDetailComponent} from '../cars/cardetail.component';
 import {CarFormComponent} from '../cars/carform.component';

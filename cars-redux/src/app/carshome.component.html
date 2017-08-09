@@ -1,0 +1,9 @@
+<div style="text-align: center">
+  <h1> This is home showing the first 6 cars using Redux...</h1>
+<div *ngFor="let car of cars | async">
+  <p>{{car.make}}</p>
+  <p>Model:{{car.model}}</p>
+  <div><a routerLink="/cars/{{car.id}}" routerLinkActive="active">Details</a></div>
+  <img src="{{car.image}}">
+</div>
+</div>

@@ -14,7 +14,7 @@ export class CarFormComponent {
 
   constructor(private data: DataCars, private  router: Router) {}
   makes = ['Mazda', 'Toyota', 'Honda'];
-  currentCar = new Car('', '', '');
+  currentCar = new Car('', '', '', new Date('2010-03-03'));
 
   onSubmit() {
     this.data.addCar(this.currentCar);

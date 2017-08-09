@@ -12,7 +12,8 @@ import {CarFormComponent} from './carform.component';
 import {EditCarFormComponent} from './editcarform.component.html';
 import { FormsModule } from '@angular/forms';
 import {ImageDirective} from './imageDirective.directive';
-import  {DatePipe} from './pipeDate';
+import {DatePipe} from './pipeDate';
+import {CarsActions} from './cars.actions';
 
 @NgModule({
   declarations: [
@@ -29,7 +30,7 @@ import  {DatePipe} from './pipeDate';
     AppRoutesModule,
     FormsModule
   ],
-  providers: [DataCars],
+  providers: [DataCars, CarsActions],
   exports:  []
 
 })

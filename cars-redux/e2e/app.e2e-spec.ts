@@ -1,10 +1,10 @@
-import { ModulesRoutesPage } from './app.po';
+import { CarsReduxPage } from './app.po';
 
-describe('modules-routes App', () => {
-  let page: ModulesRoutesPage;
+describe('cars-redux App', () => {
+  let page: CarsReduxPage;
 
   beforeEach(() => {
-    page = new ModulesRoutesPage();
+    page = new CarsReduxPage();
   });
 
   it('should display welcome message', () => {

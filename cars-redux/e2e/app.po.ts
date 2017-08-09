@@ -1,6 +1,6 @@
 import { browser, by, element } from 'protractor';
 
-export class ModulesRoutesPage {
+export class CarsReduxPage {
   navigateTo() {
     return browser.get('/');
   }
