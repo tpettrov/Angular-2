@@ -1,0 +1,13 @@
+<div style="text-align: center">
+  <h1> This is ALL CARS page</h1>
+  <button (click)="sortByMake()">Sort By Make</button>
+  <div *ngFor="let car of cars">
+    <p>Make: {{car.make}}</p>
+    <p>Model:{{car.model}}</p>
+    <div><a routerLink="/cars/{{car.id}}" routerLinkActive="active">Details</a></div>
+    <div><a routerLink="/cars/edit/{{car.id}}" routerLinkActive="active">Edit</a></div>
+    <img src="{{car.image}}">
+  </div>
+  <button (click)="PreviousPage()">Previous Page</button>
+  <button (click)="NextPage()">NextPage</button>
+</div>
