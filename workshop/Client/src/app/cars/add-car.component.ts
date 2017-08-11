@@ -15,7 +15,7 @@ export class AddCarComponent {
   car: AddCarModel = new AddCarModel();
 
   addCar() {
-    this.carsService.add(this.car).subscribe((res) => {
+    this.carsService.addCar(this.car).subscribe((res) => {
       console.log(res);
     });
   }

@@ -5,7 +5,7 @@ import {HttpService} from '../common/http.service';
 export class CarsService {
   constructor(private http: HttpService ) {}
 
-  add(car): any {
-    return this.http.post('cars/create/', car);
+  addCar(car): any {
+    return this.http.post('cars/create', car, true);
   }
 }
