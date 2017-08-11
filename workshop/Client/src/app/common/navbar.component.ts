@@ -22,12 +22,12 @@ export class NavbarComponent implements OnInit, OnDestroy {
   ngOnInit() {
     this.authenticated = this.auth.isUserAuthenticated();
     this.username = this.auth.getUser();
-    console.log(this.username);
   }
 
   logout() {
     this.authenticated = this.auth.deauthenticateUser();
     this.username = this.auth.removeUser();
+    this.router.navigateByUrl('');
   }
 
   ngOnDestroy() {
