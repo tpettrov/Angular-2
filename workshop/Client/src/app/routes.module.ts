@@ -10,6 +10,7 @@ const routes: Routes = [
   {path: '', component: StatsComponent },
   {path: 'users/register', component: RegisterComponent },
   {path: 'users/login', component: LoginComponent },
+  {path: 'cars/all', component: StatsComponent },
   {path: 'cars/add',
   component: AddCarComponent,
   canActivate: [PrivateRoute]}
