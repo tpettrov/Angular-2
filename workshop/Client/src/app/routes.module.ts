@@ -4,14 +4,14 @@ import {LoginComponent} from './users/login.component';
 import {NgModule} from '@angular/core';
 import {PrivateRoute} from './common/private-route';
 import {StatsComponent} from './stats/stats.component';
-
+import {AddCarComponent} from "./cars/add-car.component"
 
 const routes: Routes = [
   {path: '', component: StatsComponent },
   {path: 'users/register', component: RegisterComponent },
   {path: 'users/login', component: LoginComponent },
   {path: 'cars/add',
-  component: RegisterComponent,
+  component: AddCarComponent,
   canActivate: [PrivateRoute]}
   ];
 

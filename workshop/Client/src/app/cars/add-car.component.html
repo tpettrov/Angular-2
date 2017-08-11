@@ -1,0 +1,91 @@
+<h1>Add Car Form</h1>
+<form #AddCarForm="ngForm" (submit)="add()">
+  <div class="form-group">
+    <label for="make">Make</label>
+    <input
+      class="form-control"
+      id="make"
+      name="make"
+      [(ngModel)]="car.make"
+      #make = "ngModel"
+      required>
+    <span [hidden]="make.valid || make.pristine">
+      Make is required!
+    </span>
+  </div>
+
+  <div class="form-group">
+    <label for="model">Model</label>
+    <input
+      class="form-control"
+      id="model"
+      name="model"
+      [(ngModel)]="car.model"
+      #model = "ngModel"
+      required>
+    <span [hidden]="model.valid || model.pristine">
+      Model is required!
+    </span>
+  </div>
+
+  <div class="form-group">
+  <label for="model">Year</label>
+  <input
+    class="form-control"
+    id="year"
+    name="year"
+    [(ngModel)]="car.year"
+    #year = "ngModel"
+    required>
+  <span [hidden]="year.valid || year.pristine">
+      Year is required!
+    </span>
+</div>
+
+  <div class="form-group">
+    <label for="engine">Engine</label>
+    <input
+      class="form-control"
+      id="engine"
+      name="engine"
+      [(ngModel)]="car.engine"
+      #engine = "ngModel"
+      required>
+    <span [hidden]="engine.valid || engine.pristine">
+      Engine is required!
+    </span>
+  </div>
+
+  <div class="form-group">
+    <label for="price">Price</label>
+    <input
+      class="form-control"
+      id="price"
+      name="price"
+      [(ngModel)]="car.price"
+      #price = "ngModel"
+      required>
+    <span [hidden]="price.valid || price.pristine">
+      Price is required!
+    </span>
+  </div>
+
+  <div class="form-group">
+    <label for="image">Image</label>
+    <input
+      class="form-control"
+      id="image"
+      name="image"
+      [(ngModel)]="car.image"
+      #image = "ngModel"
+      required>
+    <span [hidden]="image.valid || image.pristine">
+      Image is required!
+    </span>
+  </div>
+
+
+
+  <button type="submit" class="btn btn-success" [disabled]="!AddCarForm.form.valid" >Submit</button>
+
+</form>
