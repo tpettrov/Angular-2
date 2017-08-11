@@ -9,15 +9,15 @@ export class AuthService {
 
   }
 
-  getUser(user) {
+  getUser() {
 
-    const userJson = window.localStorage.getItem('user');
+    const user = window.localStorage.getItem('user');
 
-    if (userJson) {
-      return userJson;
+    if (user) {
+      return user;
     } else {
 
-      return {};
+      return '';
     }
 
   }
@@ -25,6 +25,7 @@ export class AuthService {
   removeUser() {
 
     window.localStorage.removeItem('user');
+    return null;
   }
 
   authenticateUser(token) {
@@ -38,6 +39,7 @@ export class AuthService {
 
   deauthenticateUser() {
     window.localStorage.removeItem('token');
+    return false;
   }
 
 

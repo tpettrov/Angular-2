@@ -19,7 +19,6 @@ export class LoginComponent {
   login() {
     this.usersService.login(this.user)
       .subscribe(res => {
-        console.log(res.user);
         if (!res.success) {
           this.msgService.parseMessage(res);
         } else {
