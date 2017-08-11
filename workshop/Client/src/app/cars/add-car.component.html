@@ -1,5 +1,5 @@
 <h1>Add Car Form</h1>
-<form #AddCarForm="ngForm" (submit)="add()">
+<form #AddCarForm="ngForm" (submit)="addCar()">
   <div class="form-group">
     <label for="make">Make</label>
     <input
@@ -32,6 +32,7 @@
   <label for="model">Year</label>
   <input
     class="form-control"
+    type="number"
     id="year"
     name="year"
     [(ngModel)]="car.year"

@@ -12,9 +12,9 @@ export class AddCarComponent {
   constructor(private carsService: CarsService) {
   }
 
-  car: AddCarModel = new AddCarModel('', '', null, '', null, '');
+  car: AddCarModel = new AddCarModel();
 
-  add() {
+  addCar() {
     this.carsService.add(this.car).subscribe((res) => {
       console.log(res);
     });
