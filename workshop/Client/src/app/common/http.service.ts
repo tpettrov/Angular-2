@@ -14,8 +14,11 @@ export class HttpService {
   constructor(private http: Http) {
   }
 
-
-
+  get(url) {
+    return this.http
+      .get(`${baseUrl}${url}`)
+      .map(res => res.json());
+  }
   post(url, data) {
     return this.http
       .post(`${baseUrl}${url}`, JSON.stringify(data), reqOptions)
