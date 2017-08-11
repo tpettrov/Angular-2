@@ -6,6 +6,7 @@ import {UsersModule} from './users/users.module';
 import {CoreModule} from './common/core.module';
 import {HttpModule} from '@angular/http';
 import { MessageService } from './common/message.service';
+import {StatsModule} from './stats/stats.module';
 
 
 @NgModule({
@@ -16,6 +17,7 @@ import { MessageService } from './common/message.service';
     BrowserModule,
     UsersModule,
     CarRoutesModule,
+    StatsModule,
     CoreModule,
     HttpModule
   ],
