@@ -8,4 +8,8 @@ export class CarsService {
   addCar(car): any {
     return this.http.post('cars/create', car, true);
   }
+
+  getListCars(page): any {
+    return this.http.get(`cars/all?page=${page}`, false );
+  }
 }
