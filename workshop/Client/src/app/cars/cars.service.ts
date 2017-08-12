@@ -21,4 +21,8 @@ export class CarsService {
   getCarbyId(id): any {
     return this.http.get(`cars/details/${id}`, true);
   }
+
+  like(id): any {
+    return this.http.post(`cars/details/${id}/like`, {}, true);
+  }
 }

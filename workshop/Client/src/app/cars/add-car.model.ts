@@ -6,6 +6,6 @@ export class AddCarModel {
     engine?: string,
     price?: number,
     image?: string,
-    mileage?: number
+    mileage?: number,
   ) {}
 }
