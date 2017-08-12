@@ -33,5 +33,10 @@ export class CarsService {
   getReviews(id): any {
     return this.http.get(`cars/details/${id}/reviews`, true);
   }
-
+  getUserCars(): any {
+    return this.http.get('cars/mine/', true);
+  }
+  deleteCar(id): any {
+    return this.http.post(`cars/delete/${id}`, {}, true);
+  }
 }

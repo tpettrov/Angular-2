@@ -1,0 +1,6 @@
+<div>
+  <h1>Profile page! All users cars !</h1>
+  <div *ngFor="let car of userCars">
+    {{car.model}} -- {{car.make}} <button (click)="delete(car.id)">Delete</button>
+  </div>
+</div>

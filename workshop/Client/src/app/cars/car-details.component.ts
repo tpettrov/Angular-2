@@ -26,7 +26,6 @@ export class CarDetailsComponent implements OnInit {
         this.likes = car.likes;
         this.carsService.getReviews(id).subscribe((reviews) => {
           this.reviews = reviews;
-          console.log(reviews);
         });
       });
       });
