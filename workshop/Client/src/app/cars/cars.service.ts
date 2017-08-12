@@ -25,4 +25,9 @@ export class CarsService {
   like(id): any {
     return this.http.post(`cars/details/${id}/like`, {}, true);
   }
+
+  addReview(id, review): any {
+    return this.http.post(`cars/details/${id}/reviews/create`, review, true);
+  }
+
 }

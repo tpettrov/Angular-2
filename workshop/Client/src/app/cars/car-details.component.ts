@@ -2,6 +2,7 @@ import {Component, OnInit} from '@angular/core';
 import {ActivatedRoute} from "@angular/router";
 import {CarsService} from "./cars.service";
 import {MessageService} from "../common/message.service";
+import {ReviewModel} from "./review.model";
 
 @Component({
   selector: 'car-details',
@@ -12,6 +13,7 @@ export class CarDetailsComponent implements OnInit {
   car: object;
   id: number = 0;
   likes: number = 0;
+  review: ReviewModel = new ReviewModel(5);
 
   ngOnInit() {
     this.activatedRoute.params
@@ -30,7 +32,13 @@ export class CarDetailsComponent implements OnInit {
       this.msgService.parseMessage(res);
     } else {
       this.likes++;
+      this.msgService.sendMessage(res.message);
     }
   });
+  }
+  addReview() {
+    this.carsService.addReview(this.id, this.review).subscribe(res => {
+      console.log(res);
+    });
   }
 }

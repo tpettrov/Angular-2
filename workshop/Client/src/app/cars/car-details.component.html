@@ -2,8 +2,46 @@
   <p>Make:{{car.make}}</p>
   <p> Model:{{car.model}}</p>
   <p> Price:{{car.price}}</p>
-  <p>  Year:{{car.year}}</p>
-  <p>  Likes:{{[likes]}}</p>
+  <p> Year:{{car.year}}</p>
+  <p> Likes:{{likes}}</p>
   <button (click)="like()">Like!</button>
   <img width="150px" src="{{car.image}}">
+  <div>
+    <form #reviewForm="ngForm" (submit)="addReview()">
+      <div class="form-group">
+        <label for="rating">Rating</label>
+        <select
+          class="form-control"
+          id="rating"
+          name="rating"
+          [(ngModel)]="review.rating"
+          #rating="ngModel"
+          required>
+          <option *ngFor="let number of [1,2,3,4,5]" [value]="number">
+            {{number}}
+          </option>
+        </select>
+        <span [hidden]="rating.valid || rating.pristine">{{review.rating}}
+      Make is required!
+    </span>
+      </div>
+
+      <div class="form-group">
+        <label for="comment">Comment</label>
+        <textarea
+          class="form-control"
+          id="comment"
+          name="comment"
+          [(ngModel)]="review.comment"
+          #comment="ngModel"
+          ></textarea>
+        <span [hidden]="comment.valid || comment.pristine">
+      Model is required!
+    </span>
+      </div>
+
+      <button type="submit" class="btn btn-success" [disabled]="!reviewForm.form.valid">Submit</button>
+
+    </form>
+  </div>
 </div>
