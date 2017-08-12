@@ -44,4 +44,10 @@
 
     </form>
   </div>
+  <div *ngIf="reviews">
+    <div *ngFor="let review of reviews" style="margin-bottom: 20px; border-bottom: 1px solid black">
+      <p> Rating: {{review.rating}}</p>
+      <p> Comment: {{review.comment}}</p>
+    </div>
+  </div>
 </div>

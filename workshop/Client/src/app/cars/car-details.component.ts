@@ -14,6 +14,7 @@ export class CarDetailsComponent implements OnInit {
   id: number = 0;
   likes: number = 0;
   review: ReviewModel = new ReviewModel(5);
+  reviews: Array<ReviewModel> = [];
 
   ngOnInit() {
     this.activatedRoute.params
@@ -23,8 +24,13 @@ export class CarDetailsComponent implements OnInit {
         this.car = car;
         this.id = car.id;
         this.likes = car.likes;
+        this.carsService.getReviews(id).subscribe((reviews) => {
+          this.reviews = reviews;
+          console.log(reviews);
+        });
       });
       });
+
   }
   like() {
   this.carsService.like(this.id).subscribe(res => {
@@ -38,7 +44,12 @@ export class CarDetailsComponent implements OnInit {
   }
   addReview() {
     this.carsService.addReview(this.id, this.review).subscribe(res => {
-      console.log(res);
+      if (!res.success) {
+        this.msgService.parseMessage(res);
+      }else {
+        this.msgService.sendMessage(res.message);
+        this.reviews.push(res.review);
+      }
     });
   }
 }

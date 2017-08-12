@@ -30,4 +30,8 @@ export class CarsService {
     return this.http.post(`cars/details/${id}/reviews/create`, review, true);
   }
 
+  getReviews(id): any {
+    return this.http.get(`cars/details/${id}/reviews`, true);
+  }
+
 }
