@@ -17,12 +17,14 @@ export class ListCarsComponent implements OnInit {
 
   page: number = 1;
   cars: Array<Object>;
+  searchText: string = '';
 
   ngOnInit() {
 
     this.route.queryParams.subscribe(params => {
       this.page = +params['page'] || 1;
-      this.carsService.getListCars(this.page).subscribe((carsReceived) => {
+      this.searchText = params['search'];
+      this.carsService.getListCars(this.page, this.searchText).subscribe((carsReceived) => {
         this.cars = carsReceived;
       });
     });
@@ -33,12 +35,27 @@ export class ListCarsComponent implements OnInit {
     if (this.page === 1) {
       return;
     }
-    this.router.navigateByUrl(`/cars/all?page=${this.page - 1}`);
+    const url = this.getUrl(this.page - 1);
+    this.router.navigateByUrl(url);
   }
   showNextPage() {
     if (this.cars.length === 0) {
       return;
     }
-    this.router.navigateByUrl(`/cars/all?page=${this.page + 1}`);
+    const url = this.getUrl(this.page + 1);
+    this.router.navigateByUrl(url);
   }
+
+  search() {
+    this.router.navigateByUrl(`/cars/all?search=${this.searchText}`);
+  }
+
+  getUrl (page) {
+    let url = `/cars/all?page=${page}`;
+    if (this.searchText) {
+      url = `/cars/all?page=${page}&search=${this.searchText}`;
+    }
+    return url;
+  }
+
 }

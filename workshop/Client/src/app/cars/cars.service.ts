@@ -9,7 +9,11 @@ export class CarsService {
     return this.http.post('cars/create', car, true);
   }
 
-  getListCars(page): any {
-    return this.http.get(`cars/all?page=${page}`, false );
+  getListCars(page, searchText = null): any {
+    let url = `cars/all?page=${page}`;
+    if (searchText) {
+      url = `${url}&search=${searchText}`;
+    }
+    return this.http.get(url, false );
   }
 }
