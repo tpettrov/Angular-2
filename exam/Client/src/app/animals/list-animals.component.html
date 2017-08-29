@@ -1,0 +1,14 @@
+<div *ngIf="animals">
+  <h1>Animals list</h1>
+  <div>
+    Search: <input type="text" name="searchText" [(ngModel)]="searchText">
+    <button (click)="search()">Search</button>
+  </div>
+  <div *ngFor="let animal of animals" style="margin-bottom: 15px">
+    {{animal.name}}
+    <img style="width: 150px" src="{{animal.image}}">
+    <a routerLink="/animals/details/{{animal.id}}"> Details </a>
+  </div>
+  <button [disabled]="page === 1" (click)="showPrevPage()">Prev Page</button>
+  <button [disabled]="animals.length === 0 || animals.length < 10" (click)="showNextPage()">Next Page</button>
+</div>

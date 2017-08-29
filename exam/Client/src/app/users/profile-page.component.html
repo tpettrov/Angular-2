@@ -1,0 +1,6 @@
+<div>
+  <h1>Profile page! All my animals !</h1>
+  <div *ngFor="let animal of usersAnimals">
+    Name:{{animal.name}} -- Type:{{animal.type}} <button (click)="deleteAnimal(animal.id)">Delete</button>
+  </div>
+</div>
